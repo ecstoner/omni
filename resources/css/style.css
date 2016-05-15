@@ -1,3 +1,8 @@
+/*
+Main Orange Color: #e67e22
+Dark Orange Color: #cf6d17
+*/
+
 /* ------------------------------------------------- */
 /* BASIC SETUP */
 /* ------------------------------------------------- */
@@ -27,24 +32,6 @@ html {
     margin: 0 auto;
 }
 
-
-.logo {
-    height: 100px;
-    width: auto;
-    left: 10%;
-    position: absolute;
-}
-
-.main-nav {
-    right: 10%;
-    position: absolute;
-    list-style: none;
-    color: #fff;
-}
-
-.main-nav li {
-    display: inline;
-}
 
 /* ----------HEADING---------- */
 header h1 {
@@ -118,4 +105,39 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    left: 10%;
+    position: absolute;
+    margin-top: 20px;
+}
+
+.main-nav {
+    right: 10%;
+    position: absolute;
+    list-style: none;
+    margin-top: 60px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
 }
